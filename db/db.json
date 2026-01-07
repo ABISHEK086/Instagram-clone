@@ -1,0 +1,237 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "william_carry",
+      "name": "William",
+      "profilePic": "./src/assets/user1.png",
+      "bio": "React Developer | Building cool UIs",
+      "followers": 120,
+      "following": 181,
+      "posts": 0
+    },
+    {
+      "id": "2",
+      "username": "jesika_shae",
+      "name": "Jesika",
+      "profilePic": "./src/assets/user2.png",
+      "bio": "Travel | Photography",
+      "followers": 340,
+      "following": 200,
+      "posts": 0
+    },
+    {
+      "id": "3",
+      "username": "meera_john",
+      "name": "Meera",
+      "profilePic": "./src/assets/user3.png",
+      "bio": "Travel | Photography",
+      "followers": 341,
+      "following": 200,
+      "posts": 0
+    },
+    {
+      "id": "4",
+      "username": "hanamika_joseph",
+      "name": "Hanamika",
+      "profilePic": "./src/assets/user4.png",
+      "bio": "Travel | Photography",
+      "followers": 340,
+      "following": 200,
+      "posts": 0
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "userId": 1,
+      "username": "jesika_shae",
+      "image": "./src/assets/post1.png",
+      "profilePic": "./src/assets/user4.png",
+      "caption": "Hugging with Mountains",
+      "likes": 475,
+      "createdAt": "2025-01-10"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "username": "meera_john",
+      "image": "./src/assets/post2.png",
+      "profilePic": "./src/assets/user3.png",
+      "caption": "Flowers on the road",
+      "likes": 809,
+      "createdAt": "2025-01-11"
+    },
+    {
+      "id": "3",
+      "userId": 3,
+      "username": "hanamika_joseph",
+      "image": "./src/assets/post3.png",
+      "profilePic": "./src/assets/user5.png",
+      "caption": "Fade away ",
+      "likes": 459,
+      "createdAt": "2025-01-11"
+    },
+    {
+      "id": "4",
+      "userId": 4,
+      "username": "pooja_singh",
+      "image": "./src/assets/story7.png",
+      "profilePic": "./src/assets/story3.png",
+      "caption": "My Daily routine",
+      "likes": 678,
+      "createdAt": "2025-01-11"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": 1,
+      "userId": 2,
+      "text": "Looks awesome 🔥"
+    },
+    {
+      "id": "2",
+      "postId": 2,
+      "userId": 1,
+      "text": "Beautiful shot 😍"
+    }
+  ],
+  "likes": [
+    {
+      "id": "1",
+      "postId": 1,
+      "userId": 2
+    }
+  ],
+  "following": [
+    {
+      "id": "1",
+      "followerId": 1,
+      "followingId": 2
+    }
+  ],
+  "saved": [
+    {
+      "id": "b4f6",
+      "postId": "4",
+      "userId": 1,
+      "savedAt": "2026-01-07T04:45:30.096Z"
+    },
+    {
+      "id": "e507",
+      "postId": "3",
+      "userId": 1,
+      "savedAt": "2026-01-07T04:45:47.490Z"
+    },
+    {
+      "id": "15a2",
+      "postId": "2",
+      "userId": 1,
+      "savedAt": "2026-01-07T04:51:26.348Z"
+    }
+  ],
+  "story": [
+    {
+      "id": "1",
+      "userId": 1,
+      "username": "jesika_joseph",
+      "image": "/src/assets/story1.png",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": "2",
+      "userId": 2,
+      "username": "priya_malar",
+      "image": "/src/assets/story2.png",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": "3",
+      "userId": 3,
+      "username": "deepika",
+      "image": "/src/assets/story3.png",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": "4",
+      "userId": 4,
+      "username": "priya_mor",
+      "image": "/src/assets/story4.png",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": "5",
+      "userId": 5,
+      "username": "varun",
+      "image": "/src/assets/story5.png",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": "6",
+      "userId": 6,
+      "username": "lufina",
+      "image": "/src/assets/story6.png",
+      "createdAt": "2025-01-12"
+    },
+    {
+      "id": "7",
+      "userId": 7,
+      "username": "pooja_hedge",
+      "image": "/src/assets/story7.png",
+      "createdAt": "2025-01-12"
+    }
+  ],
+  "profile": [
+    {
+      "id": "6",
+      "userId": 10,
+      "username": "jenifer_liyana",
+      "name": " Jenifer Liyana",
+      "profilePic": "./src/assets/user3.png",
+      "bio": "@cristiano @bmw pretty good",
+      "posts": 0,
+      "followers": 120,
+      "following": 180,
+      "website url": "liyanaproduct.com"
+    }
+  ],
+  "suggestions": [
+    {
+      "id": "1",
+      "username": "william_carry",
+      "name": "William",
+      "profilePic": "./src/assets/user1.png",
+      "bio": "React Developer | Building cool UIs",
+      "followers": 120,
+      "following": 180
+    },
+    {
+      "id": "2",
+      "username": "meera_hedge",
+      "name": "Meera",
+      "profilePic": "./src/assets/user3.png",
+      "bio": "React Developer | Building cool UIs",
+      "followers": 120,
+      "following": 180
+    },
+    {
+      "id": "3",
+      "username": "nivedha__thomos",
+      "name": "Nivedha",
+      "profilePic": "./src/assets/user4.png",
+      "bio": "React Developer | Building cool UIs",
+      "followers": 120,
+      "following": 180
+    },
+    {
+      "id": "4",
+      "username": "anjali_sivakumar",
+      "name": "Anjali",
+      "profilePic": "./src/assets/user5.png",
+      "bio": "React Developer | Building cool UIs",
+      "followers": 120,
+      "following": 180
+    }
+  ]
+}
