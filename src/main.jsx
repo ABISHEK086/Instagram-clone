@@ -7,7 +7,10 @@ import Profile from './Profile.jsx'
 import UpdateProfile from './UpdateProfile.jsx'
 import Comments from './Comments.jsx'
 import Search from './Search.jsx'
-import SavedPosts from './Savedposts.jsx'
+import SavedPosts from './SavedPosts.jsx'
+import Notifications from './Notifications.jsx'
+import Messages from './Messages.jsx'
+import Chat from './Chat.jsx'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +24,18 @@ const router = createBrowserRouter([
   {
     path: "/saved",
     element: <SavedPosts />
+  },
+  {
+    path: "/notifications",
+    element: <Notifications />
+  },
+  {
+    path: "/messages",
+    element: <Messages />
+  },
+  {
+    path: "/chat/:userId",
+    element: <Chat />
   },
   {
     path: "/story/:id/:tot",

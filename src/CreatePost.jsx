@@ -8,16 +8,16 @@ function CreatePost({ isOpen, onClose, onPostCreated }) {
     const currentUserId = 1; // Current logged-in user
 
     const availableImages = [
-        './src/assets/post1.png',
-        './src/assets/post2.png',
-        './src/assets/post3.png',
-        './src/assets/story1.png',
-        './src/assets/story2.png',
-        './src/assets/story3.png',
-        './src/assets/story4.png',
-        './src/assets/story5.png',
-        './src/assets/story6.png',
-        './src/assets/story7.png'
+        './src/assets/post-1.png',
+        './src/assets/post-2.png',
+        './src/assets/post-3.png',
+        './src/assets/story-1.png',
+        './src/assets/story-2.png',
+        './src/assets/story-3.png',
+        './src/assets/story-4.png',
+        './src/assets/story-5.png',
+        './src/assets/story-6.png',
+        './src/assets/story-7.png'
     ];
 
     useEffect(() => {

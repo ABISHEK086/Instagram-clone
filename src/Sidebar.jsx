@@ -1,8 +1,47 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom' 
+import axios from 'axios'
 
 function Sidebar({ onCreateClick, darkMode, toggleDarkMode }) {
   const navigate = useNavigate()
+  const [unreadCount, setUnreadCount] = useState(0)
+  const [unreadMessages, setUnreadMessages] = useState(0)
+  const currentUserId = 1
+
+  useEffect(() => {
+    fetchUnreadCount()
+    fetchUnreadMessages()
+    // Poll for new notifications and messages every 3 seconds
+    const interval = setInterval(() => {
+      fetchUnreadCount()
+      fetchUnreadMessages()
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const fetchUnreadCount = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/notifications')
+      const unread = response.data.filter(
+        notif => notif.recipientId == currentUserId && !notif.read
+      )
+      setUnreadCount(unread.length)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  const fetchUnreadMessages = async () => {
+    try {
+      const response = await axios.get('http://localhost:3001/messages')
+      const unread = response.data.filter(
+        msg => msg.receiverId == currentUserId && !msg.read
+      )
+      setUnreadMessages(unread.length)
+    } catch (err) {
+      console.log(err)
+    }
+  }
   
   return (
     <div className="m-3">
@@ -29,8 +68,15 @@ function Sidebar({ onCreateClick, darkMode, toggleDarkMode }) {
         <div className="reel" style={{ cursor: 'pointer' }}>
           <i className="bi bi-play-circle"></i>Reels
         </div>
-        <div style={{ cursor: 'pointer' }}>
-          <i className="bi bi-heart"></i>Messages
+        <div 
+          style={{ cursor: 'pointer' }}
+          onClick={() => navigate('/messages')}
+          className="position-relative"
+        >
+          <i className="bi bi-chat"></i>Messages
+          {unreadMessages > 0 && (
+            <span className="notification-badge">{unreadMessages}</span>
+          )}
         </div>
         <div 
           onClick={onCreateClick}
@@ -44,8 +90,15 @@ function Sidebar({ onCreateClick, darkMode, toggleDarkMode }) {
         >
           <i className="bi bi-bookmark"></i>Saved
         </div>
-        <div className="notification" style={{ cursor: 'pointer' }}>
+        <div 
+          className="notification position-relative" 
+          style={{ cursor: 'pointer' }}
+          onClick={() => navigate('/notifications')}
+        >
           <i className="bi bi-bell-fill"></i>Notifications
+          {unreadCount > 0 && (
+            <span className="notification-badge">{unreadCount}</span>
+          )}
         </div>
         <div 
           onClick={() => { navigate('/profile') }}
