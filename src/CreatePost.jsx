@@ -14,7 +14,7 @@ function CreatePost({ isOpen, onClose, onPostCreated }) {
         './src/assets/story-1.png', 
         './src/assets/story-2.png',   
         './src/assets/story-3.png',  
-        './src/assets/story-4.png   
+        './src/assets/story-4.png,  
         './src/assets/story-5.png', 
         './src/assets/story-6.png',
         './src/assets/story-7.png'
