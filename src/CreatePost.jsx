@@ -5,7 +5,7 @@ function CreatePost({ isOpen, onClose, onPostCreated }) {
     const [caption, setCaption] = useState('');
     const [selectedImage, setSelectedImage] = useState('');
     const [currentUser, setCurrentUser] = useState(null); 
-    const currentUserId = 1; // Current logged-in user
+    const currentUserId = 1; // Current logged-in user 
   
     const availableImages = [     
         './src/assets/post-1.png',    
