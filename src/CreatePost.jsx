@@ -9,7 +9,7 @@ function CreatePost({ isOpen, onClose, onPostCreated }) {
   
     const availableImages = [     
         './src/assets/post-1.png',    
-        './src/assets/post-2.png',       
+        './src/assets/post-2.png',        
         './src/assets/post-3.png',    
         './src/assets/story-1.png',   
         './src/assets/story-2.png',   
