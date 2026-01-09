@@ -11,7 +11,7 @@ function Suggestions() {
  
      const navigate = useNavigate();
  
-     useEffect(() => {
+     useEffect(() => { 
          fetchProfile();
          fetchSuggestions();
          fetchFollowing(); 
