@@ -8,7 +8,7 @@ function Suggestions() {
      const [suggestion, setSuggestion] = useState([]);
      const [followingUsers, setFollowingUsers] = useState({}); 
      const currentUserId = 1; // Current logged-in   
-
+ 
      const navigate = useNavigate();
 
      useEffect(() => {
