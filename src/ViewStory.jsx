@@ -8,7 +8,7 @@ function ViewStory() {
   
   useEffect(() => { 
     fetch(`http://localhost:3001/story/${id}`)   
-      .then(res => res.json())
+      .then(res => res.json()) 
       .then(data => setStory(data))  
       .catch(err => console.log(err)) 
   }, [id])
