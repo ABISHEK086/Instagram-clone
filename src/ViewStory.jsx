@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
  
 function ViewStory() {
   const { id, tot } = useParams()
-  const [story, setStory] = useState(null) 
+  const [story, setStory] = useState(null)  
   const navigate = useNavigate()
     
   useEffect(() => {  
