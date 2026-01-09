@@ -5,7 +5,7 @@ function ViewStory() {
   const { id, tot } = useParams()
   const [story, setStory] = useState(null)
   const navigate = useNavigate()
-
+ 
   useEffect(() => {
     fetch(`http://localhost:3001/story/${id}`)   
       .then(res => res.json())
