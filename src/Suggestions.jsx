@@ -7,7 +7,7 @@ function Suggestions() {
      const [profile, setProfile] = useState(null);
      const [suggestion, setSuggestion] = useState([]);
      const [followingUsers, setFollowingUsers] = useState({});
-     const currentUserId = 1; // Current logged-in user
+     const currentUserId = 1; // Current logged-in  
 
      const navigate = useNavigate();
 
