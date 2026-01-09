@@ -14,7 +14,7 @@ function Suggestions() {
      useEffect(() => {
          fetchProfile();
          fetchSuggestions();
-         fetchFollowing();
+         fetchFollowing(); 
      }, []);
 
      const fetchProfile = () => {
