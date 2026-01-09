@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import axios from 'axios' 
  
 function Suggestions() {
      const [profile, setProfile] = useState(null);
