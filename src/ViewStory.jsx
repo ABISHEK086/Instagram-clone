@@ -10,7 +10,7 @@ function ViewStory() {
     fetch(`http://localhost:3001/story/${id}`)   
       .then(res => res.json())
       .then(data => setStory(data)) 
-      .catch(err => console.log(err))
+      .catch(err => console.log(err)) 
   }, [id])
 
   if (Number(id) > Number(tot) || Number(id) <= 0) {
