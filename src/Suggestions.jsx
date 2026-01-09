@@ -15,7 +15,7 @@ function Suggestions() {
          fetchProfile();
          fetchSuggestions();
          fetchFollowing(); 
-     }, []);
+     }, []); 
 
      const fetchProfile = () => {
          fetch('http://localhost:3001/profile')
