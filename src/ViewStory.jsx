@@ -6,7 +6,7 @@ function ViewStory() {
   const [story, setStory] = useState(null)
   const navigate = useNavigate()
  
-  useEffect(() => {
+  useEffect(() => { 
     fetch(`http://localhost:3001/story/${id}`)   
       .then(res => res.json())
       .then(data => setStory(data)) 
