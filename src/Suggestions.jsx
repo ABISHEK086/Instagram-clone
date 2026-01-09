@@ -10,7 +10,7 @@ function Suggestions() {
      const currentUserId = 1; // Current logged-in   
  
      const navigate = useNavigate();
-
+ 
      useEffect(() => {
          fetchProfile();
          fetchSuggestions();
