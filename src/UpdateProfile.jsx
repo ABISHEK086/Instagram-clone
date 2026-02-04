@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 function UpdateProfile() {  
   const [profile, setProfile] = useState(null)  
   const navigate = useNavigate() 
-   
+    
   useEffect(() => { 
     axios   
       .get('http://localhost:3001/profile')
