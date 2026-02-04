@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
  
 function UpdateProfile() {  
-  const [profile, setProfile] = useState(null) 
+  const [profile, setProfile] = useState(null)  
   const navigate = useNavigate() 
    
   useEffect(() => {
