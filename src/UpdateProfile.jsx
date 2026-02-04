@@ -7,7 +7,7 @@ function UpdateProfile() {
   const navigate = useNavigate() 
    
   useEffect(() => {
-    axios 
+    axios  
       .get('http://localhost:3001/profile')
       .then(res => setProfile(res.data[0]))
       .catch(err => console.log(err))
