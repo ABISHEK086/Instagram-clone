@@ -6,7 +6,7 @@ function UpdateProfile() {
   const [profile, setProfile] = useState(null)  
   const navigate = useNavigate() 
    
-  useEffect(() => {
+  useEffect(() => { 
     axios  
       .get('http://localhost:3001/profile')
       .then(res => setProfile(res.data[0]))
