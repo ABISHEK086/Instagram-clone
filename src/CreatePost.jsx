@@ -19,7 +19,7 @@ function CreatePost({ isOpen, onClose, onPostCreated }) {
         './src/assets/story-6.png',
         './src/assets/story-7.png'
     ];
-
+ 
     useEffect(() => {
         if (isOpen) {
             fetchCurrentUser();
